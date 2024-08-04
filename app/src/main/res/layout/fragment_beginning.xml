@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/initBackGround"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Must Have"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:text="Low.."
+            android:layout_centerInParent="true"
+            android:layout_below="@id/text1"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/id_verificsation_button"
+        android:text="🔒 본인인증 후 시작하기"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미성년자 / 법인투자자 이용안내"
+        android:textStyle="bold"
+        android:textColor="#1565C0"
+        android:gravity="left"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:layout_marginLeft="15dp"
+        android:background="@android:color/transparent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="15dp"
+        android:text="안전한 서비스를 위해 하나의 기기에서는 하나의 계정으로만 로그인할 수 있습니다." />
+</LinearLayout>
